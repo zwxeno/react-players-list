@@ -7,8 +7,8 @@ const PlayerList = () => {
     return (
         <div className={'flex-row d-flex'}>
             {players.map(
-                (player) => (
-                    <Player {...player}/>
+                (player, index) => (
+                    <Player key={index} {...player}/>
                 )
             )}
         </div>
